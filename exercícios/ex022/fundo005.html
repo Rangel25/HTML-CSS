@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
+          
+            background-attachment: fixed;*/
+            /*
+                background shorthand
+                color > image > position > repeat > [size] >attachment
+            */
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             border-radius: 20px;
             border: 1px solid darkblue;
@@ -29,6 +36,8 @@
         <main>
             <h1>Teste de imagem de fundo</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem delectus perspiciatis culpa. Praesentium minus, officiis esse quaerat veritatis officia, iure non provident nihil mollitia libero eligendi eos numquam sed dolore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vitae alias fugit tempore atque delectus illum in iste consectetur omnis unde quas aperiam soluta neque, optio, mollitia minus aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero neque ipsam nobis, non sunt consequatur id dolor voluptate quo omnis. Reprehenderit tenetur obcaecati tempore, rem laboriosam at asperiores aut. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo porro vitae at. Delectus atque labore excepturi deleniti, quam quaerat. Nesciunt quis maxime libero corporis impedit quasi eligendi totam aliquam nihil?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolores doloremque? Quo at officiis assumenda reprehenderit inventore beatae, ipsum libero veritatis ut provident et accusantium consequuntur quibusdam quia quisquam eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat explicabo earum libero voluptate tempora. Itaque est deleniti facere, sequi, voluptas nemo, saepe earum labore architecto nesciunt ipsa molestiae. Impedit, placeat! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio reprehenderit consectetur aliquid officia nesciunt facilis, tempore nobis quia rerum, expedita fuga ducimus ea! Nihil ullam natus, ea tenetur nemo magnam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aut quo sit culpa delectus id iure quas. Sit, fugit? Eos sequi rerum unde quibusdam exercitationem harum ullam corporis fugit laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem tempore amet qui dolorem eius, ipsam rem. Autem repellendus doloremque voluptates? Quia at aut ad iste error dolores eius blanditiis atque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate voluptatum voluptatibus quo totam mollitia, quaerat velit sunt, recusandae ipsa inventore reiciendis impedit non obcaecati. Laboriosam esse eos nihil a! Mollitia!</p>
         </main>
 </body>
 </html>
