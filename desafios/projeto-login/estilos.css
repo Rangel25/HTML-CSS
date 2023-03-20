@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'pixel';
+    src: url(midias/Pixeled.ttf);
+    font-weight: normal;
+    font-size: normal;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+div#marca, div#logscreen{
+    display: inline-block;
+}
+
+div#marca{
+    background-image: url(midias/Inserir\ um\ título.png);
+    height: 100vh;
+    width: 600px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.603);
+}
+
+div#marca a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 2px 3px 2px black;
+    font-family: 'pixel',Arial, Helvetica, sans-serif;
+    
+}
+div#logscreen{
+    height: 100vh;
+    width: 700px;
+}
