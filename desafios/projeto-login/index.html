@@ -8,20 +8,28 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div id="marca">
-        <a href="#">sobre</a>
-        <a href="#">fale conosco</a>
+    <div id="logo">
+        <a href="#">Contato</a>
+        <a href="#">Sobre a página</a>
     </div>
-        <div id="logscreen">
-        
-        <div id="logfield">
-            <form action="post">
-                <label for="iusu">Usuário:</label>
-                <input type="text" name="nome" id="iusu">
-                <label for="isen">Senha</label>
-                <input type="password" name="sen" id="isen">
-            </form>
+
+    <section id="logscreen">
+        <div id="login">
+            <h1 id="title">Entrar</h1>
+            <p id="subtitle">Bem-vindo! Por favor entre com seus dados</p>
+            <form action="cadastro.php" method="post"></form>
+            <p>
+                <input type="text" name="user" id="iuser"  class="field" placeholder="Usuário">
+            </p>
+            <p>
+                <input type="password" name="pass" id="ipass" class="field" placeholder="Senha">
+            </p>
+            
+            <a href="#" class="alog">esqueci minha senha</a> <input type="submit" value="Entrar" id="butlog"> 
+
+            <p id="qconta">Não tem uma conta? <a href="#" class="alog">cadastre-se aqui</a></p>
+           
         </div>
-        </div>
+    </section>
 </body>
 </html>

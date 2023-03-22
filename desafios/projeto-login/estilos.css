@@ -11,28 +11,87 @@
     margin: 0px;
 }
 
-div#marca, div#logscreen{
-    display: inline-block;
+#logscreen{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
 }
 
-div#marca{
-    background-image: url(midias/Inserir\ um\ título.png);
-    height: 100vh;
-    width: 600px;
-    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.603);
+#login{
+    background:rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px rgba(41, 41, 41, 0.315);
+    width: min(100%, 390px);
+    padding: 40px;
+    display: grid;
+    gap: 1em;
 }
 
-div#marca a{
+#title{
+    font-size: 2em;
+    font-family: sans-serif;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.404);
+    position: relative;
+   padding-left: 20px;
+}
+#title h1::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+}
+#subtitle{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(88, 88, 88);
+}
+
+.field{
+    font: inherit;
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    height: 35px;
+}
+
+::placeholder{
+    font-size: 0.9em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+
+.alog{
+    font-size: 1em;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: 15px;
-    text-align: center;
-    text-shadow: 2px 3px 2px black;
-    font-family: 'pixel',Arial, Helvetica, sans-serif;
+    color: rgb(49, 140, 224);
     
 }
-div#logscreen{
-    height: 100vh;
-    width: 700px;
+
+a:hover{
+    text-decoration: underline;
+}
+
+#butlog{
+    background-color:rgb(49, 140, 224) ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    outline: 2px solid transparent;
+    height: 40px;
+    width: 60px;
+}
+
+#butlog:hover{
+    background-color: white;
+    color:rgb(49, 140, 224);
+    border: 2px solid rgb(49, 140, 224) ;
+}
+
+#qconta{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(88, 88, 88);
 }
