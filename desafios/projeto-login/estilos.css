@@ -11,6 +11,9 @@
     margin: 0px;
 }
 
+div{
+    display: inline-block;
+}
 #logscreen{
     display: grid;
     place-items: center;
